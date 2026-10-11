@@ -82,6 +82,6 @@
   ],
   "minimal_gaussian_height": 23,
   "gaussian_minimality_status": "exhaustive computation with independent traversal; not a Lean nonexistence proof",
-  "source_sha256": "cbf4882cf69197f982d24e5974c61450bdb4689659e3b99cc0fecfaa98fecede",
+  "source_sha256": "b2def83b243438c87aaa841c6f605d2ea1fdd0e2dafbe8e1499dab700eb38cb7",
   "novelty": "not assessed in the literature; no worldwide priority claim"
 }

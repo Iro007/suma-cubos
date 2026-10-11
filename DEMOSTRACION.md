@@ -151,3 +151,15 @@ contra enumeracion directa de triples en cuadrados pequenos.
 Esto demuestra minimalidad con el respaldo de una computacion exhaustiva
 exacta. Lean certifica la igualdad del testigo y su altura 23, pero no la
 completitud ni el resultado negativo de la enumeracion gaussiana.
+
+
+## Verificacion de la ampliacion
+
+Lean verifico los ocho teoremas nuevos, incluyendo la minimalidad del
+denominador positivo 6, la equivalencia al eliminar denominadores y el
+testigo gaussiano. El proyecto completo tiene 20 teoremas compilados.
+
+Ejecucion: https://github.com/Iro007/suma-cubos/actions/runs/38108589020
+La huella de cada archivo formal y el alcance estan en
+[evidence/domains-formal-verification.json](evidence/domains-formal-verification.json).
+La minimalidad gaussiana NO se incluye entre las pruebas Lean verificadas.

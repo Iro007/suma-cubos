@@ -16,6 +16,6 @@ test_windows_checkpoint_retry (test_search.SearchTests.test_windows_checkpoint_r
 test_zero_discriminant (test_search.SearchTests.test_zero_discriminant) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 11.250s
+Ran 16 tests in 2.897s
 
 OK

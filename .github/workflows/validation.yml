@@ -16,6 +16,8 @@ jobs:
           python-version: '3.13'
       - run: python -m unittest discover -v
       - run: python scripts/audit_campaigns.py
+      - run: python number_domains.py --output .git/domains-replay.json
+      - run: python scripts/audit_number_domains.py .git/domains-replay.json
   lean:
     runs-on: ubuntu-latest
     timeout-minutes: 30

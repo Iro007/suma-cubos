@@ -11,7 +11,7 @@ Windows / PowerShell; `.venv` con Python 3.13.15. El motor y los tests usan
 solo la biblioteca estandar. No se instalaron paquetes adicionales.
 
 ```powershell
-.\.venv\Scripts\python.exe -m unittest test_search -v
+.\.venv\Scripts\python.exe -m unittest discover -v
 .\.venv\Scripts\python.exe booker_sieve.py --K 6 --B 12 --procs 2
 ```
 
@@ -76,7 +76,7 @@ No ejecutar dos cazadores simultaneamente en la misma carpeta de salida.
 
 ## Evidencia de validacion
 
-Pasaron los 11 tests. Las dos campanas terminaron para los siete objetivos,
+Pasaron los 11 tests originales y cinco tests nuevos sobre dominios numericos (16 en total). Las dos campanas terminaron para los siete objetivos,
 con cero soluciones, y los 14 checkpoints pasaron la revision de parametros
 y huella del motor.
 
@@ -92,3 +92,24 @@ y huella del motor.
 
 La salida de los tests y las busquedas esta en `experiments/2026-10-10`.
 Los JSON de cada campana muestran el rango realmente completado.
+
+
+## Estudio de dominios numericos
+
+```powershell
+.\.venv\Scripts\python.exe number_domains.py
+.\.venv\Scripts\python.exe number_domains.py --output .git\domains-replay.json
+.\.venv\Scripts\python.exe scripts\audit_number_domains.py .git\domains-replay.json
+```
+
+Para cambiar el objetivo, se puede indicar --K y las cotas. Sin --output,
+el nombre del archivo incluye K para no sobrescribir la evidencia de 114.
+Los resultados gaussianos se contrastan contra otro recorrido exacto y las
+fracciones positivas contra enumeracion de triples ordenados. CI repite
+la busqueda completa y compara su JSON con la evidencia publicada.
+
+El minimo denominador 6 requiere las tres fracciones estrictamente positivas.
+La altura gaussiana es la maxima componente entera absoluta; su minimo 23
+se verifica por enumeracion y contraste, no por una prueba Lean de ausencia.
+Lean compilo el teorema del denominador minimo y los certificados de los
+testigos racional y gaussiano. Ver DEMOSTRACION.md.

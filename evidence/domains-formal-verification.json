@@ -1,0 +1,59 @@
+{
+  "status": "verified",
+  "workflow_url": "https://github.com/Iro007/suma-cubos/actions/runs/38108589020",
+  "verified_commit": "0f8524bd381dbc3c1aea237dd30e3df103e45f81",
+  "lean_toolchain": "leanprover/lean4:v4.19.0",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "proof_files_sha256": {
+    "formal/SumaCubos.lean": "cbef96be2d55600df74d4dea1cd1d5b1a24dfcd3eebffc908f723f6c353e2cfb",
+    "formal/SumaCubos/NumberDomains.lean": "c4ed1aeda5da3212115d84179e6ccd22a96f19bca6989c37fd17514b2e418b04"
+  },
+  "theorems_by_file": {
+    "formal/SumaCubos.lean": [
+      "cube_sum_factorization",
+      "signed_discriminant",
+      "divisor_necessary",
+      "reconstruction_sound",
+      "unsigned_discriminant",
+      "divisor_cube_bound",
+      "zero_sum_branch",
+      "control_k3",
+      "control_k75",
+      "control_k165",
+      "control_k579",
+      "control_k906"
+    ],
+    "formal/SumaCubos/NumberDomains.lean": [
+      "numerator_bound",
+      "small_denominator_check",
+      "no_positive_denominator_below_six",
+      "minimum_positive_common_denominator",
+      "rational_numerators_equiv",
+      "positive_rational_k114",
+      "gaussian_k114",
+      "gaussian_witness_height"
+    ]
+  },
+  "positive_rational_minimum_formal": true,
+  "gaussian_witness_formal": true,
+  "gaussian_height_23_witness_formal": true,
+  "gaussian_minimum_formal": false,
+  "observed_axioms": {
+    "minimum_positive_common_denominator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "rational_numerators_equiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "gaussian_k114": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "denominator minimum for strictly positive fractions; Gaussian witness equality and height; Gaussian minimality remains exhaustive computation"
+}

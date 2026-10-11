@@ -121,8 +121,9 @@ Los datos estan en evidence/beyond-1000-probe.json.
 
 Para K=114, el menor denominador comun de tres fracciones estrictamente
 positivas es 6: (13/6,7/3,9/2). Los seis denominadores y sus ternas completas
-se registran en evidence/number-domains-k114.json. Se preparo una prueba
+se registran en evidence/number-domains-k114.json. Se compilo y verifico una prueba
 Lean de la exclusion de denominadores menores y de la existencia con q=6.
+Evidencia: https://github.com/Iro007/suma-cubos/actions/runs/38108589020.
 
 En Z[i], usando la altura maxima de componentes enteras, se verifico
 computacionalmente que el minimo es 23. Hay una sola terna a esa altura

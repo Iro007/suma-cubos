@@ -2,6 +2,9 @@
 
 [![Validation](https://github.com/Iro007/suma-cubos/actions/workflows/validation.yml/badge.svg)](https://github.com/Iro007/suma-cubos/actions/workflows/validation.yml)
 
+La linea actual demuestra el minimo denominador positivo 6 para 114 y
+verifica computacionalmente la altura gaussiana minima 23.
+
 Este repositorio publica un buscador reproducible para
 `x^3 + y^3 + z^3 = K`, sus pruebas de regresion, 35 registros de campanas
 completadas y la formalizacion en Lean 4 de su base algebraica.
@@ -12,16 +15,16 @@ limitados a regiones finitas; no prueban inexistencia global.
 
 ## Que esta verificado
 
-- Python: 11 tests locales aprobados, con comparaciones contra enumeracion
+- Python: 16 tests locales aprobados, con comparaciones contra enumeracion
   independiente, raices singulares, enteros grandes y reanudacion.
 - Evidencia: 35 pares campana-K completados y auditados con el SHA-256
   del motor. Todos reportan cero ternas dentro de sus regiones.
-- Lean: 12 teoremas compilados y comprobados con exito: siete lemas del
-  metodo y cinco certificados de ternas conocidas. El kernel verifica las
+- Lean: 20 teoremas compilados y comprobados con exito: los 12 del metodo
+  original y ocho sobre fracciones positivas y el testigo gaussiano. El kernel verifica las
   identidades, condiciones necesarias, reconstruccion y la cota de divisores.
-  [Ejecucion satisfactoria de CI](https://github.com/Iro007/suma-cubos/actions/runs/38106620320).
+  [Ejecucion satisfactoria de CI](https://github.com/Iro007/suma-cubos/actions/runs/38108589020).
   La evidencia, versiones y huella del archivo formal estan en
-  [evidence/formal-verification.json](evidence/formal-verification.json).
+  [evidence/domains-formal-verification.json](evidence/domains-formal-verification.json).
 
 La prueba formal no certifica todo el programa Python, los archivos JSON,
 la ausencia global de soluciones ni un descubrimiento mundial.
@@ -32,7 +35,7 @@ Python 3.10 o posterior; solo biblioteca estandar. Desde Windows:
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m unittest test_search -v
+.\.venv\Scripts\python.exe -m unittest discover -v
 .\.venv\Scripts\python.exe scripts\audit_campaigns.py
 .\.venv\Scripts\python.exe hunt_unsolved.py --all --B 100000 --threads 2 --run-dir experiments\mi-campana
 ```
@@ -121,7 +124,7 @@ Se estudian dos preguntas con restricciones precisas:
 es 6. La terna es (13/6,7/3,9/2), con numeradores comunes (13,14,27).
 Se excluyeron completamente los denominadores 1,2,3,4,5. La prueba Lean
 de esta minimalidad esta en `formal/SumaCubos/NumberDomains.lean`.
-Su estado de verificacion se registra en la evidencia de CI.
+La prueba fue compilada y verificada en Lean: [evidencia de CI](https://github.com/Iro007/suma-cubos/actions/runs/38108589020).
 El resultado no afirma minimalidad si se admiten fracciones negativas:
 la positividad es esencial para la cota finita de numeradores.
 
