@@ -1,0 +1,87 @@
+{
+  "K": 114,
+  "arithmetic": "exact integer and Fraction operations",
+  "positive_rational_search": [
+    {
+      "denominator": 1,
+      "numerator_bound": 4,
+      "numerator_triples": [],
+      "complete": true
+    },
+    {
+      "denominator": 2,
+      "numerator_bound": 9,
+      "numerator_triples": [],
+      "complete": true
+    },
+    {
+      "denominator": 3,
+      "numerator_bound": 14,
+      "numerator_triples": [],
+      "complete": true
+    },
+    {
+      "denominator": 4,
+      "numerator_bound": 19,
+      "numerator_triples": [],
+      "complete": true
+    },
+    {
+      "denominator": 5,
+      "numerator_bound": 24,
+      "numerator_triples": [],
+      "complete": true
+    },
+    {
+      "denominator": 6,
+      "numerator_bound": 29,
+      "numerator_triples": [
+        [
+          13,
+          14,
+          27
+        ]
+      ],
+      "complete": true
+    }
+  ],
+  "minimal_positive_common_denominator": 6,
+  "gaussian_metric": "maximum absolute value of all six integer components",
+  "gaussian_search": [
+    {
+      "height": 22,
+      "complete": true,
+      "independent_match": true,
+      "gaussian_values": 2025,
+      "unordered_pair_checks": 2051325,
+      "triples_up_to_permutation": []
+    },
+    {
+      "height": 23,
+      "complete": true,
+      "independent_match": true,
+      "gaussian_values": 2209,
+      "unordered_pair_checks": 2440945,
+      "triples_up_to_permutation": [
+        [
+          [
+            -23,
+            -10
+          ],
+          [
+            -23,
+            10
+          ],
+          [
+            22,
+            0
+          ]
+        ]
+      ]
+    }
+  ],
+  "minimal_gaussian_height": 23,
+  "gaussian_minimality_status": "exhaustive computation with independent traversal; not a Lean nonexistence proof",
+  "source_sha256": "cbf4882cf69197f982d24e5974c61450bdb4689659e3b99cc0fecfaa98fecede",
+  "novelty": "not assessed in the literature; no worldwide priority claim"
+}

@@ -1,4 +1,5 @@
 import Mathlib
+import SumaCubos.NumberDomains
 
 /-!
 # Algebraic foundation of the exact finite divisor search

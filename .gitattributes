@@ -1,3 +1,4 @@
 * text=auto
 # Preserve the exact bytes recorded in all published engine SHA-256 hashes.
 booker_sieve.py -text whitespace=cr-at-eol
+number_domains.py -text whitespace=cr-at-eol
