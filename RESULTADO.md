@@ -98,3 +98,20 @@ Los logs estan en experiments/2026-10-10/high20-extension.log,
 high20-divisors.log, high21.log y extension-readback.log.
 Son tres regiones finitas y parciales: las cotas superiores de z no
 significan que se haya explorado todo el intervalo desde cero hasta ellas.
+
+
+## Publicacion y formalizacion verificadas
+
+Repositorio publico: https://github.com/Iro007/suma-cubos
+
+Se formalizaron siete lemas del fundamento algebraico y cinco controles
+publicados en Lean 4.19.0 con Mathlib fijado. Los 12 teoremas compilaron
+correctamente; evidencia y alcance en DEMOSTRACION.md y
+https://github.com/Iro007/suma-cubos/actions/runs/38106620320.
+
+Tambien se ejecutaron siete pruebas locales para valores mayores de 1000,
+con abs(z)<=10000 y rango completo de divisores. Se hallaron 11 ternas
+por permutacion para cinco K, todos ya representados en la tabla historica
+de Mishima. Para 1011 y 1020 no hubo resultados en ese rango. No se ha
+establecido un nuevo caso mundial ni el estado global actual de esos dos K.
+Los datos estan en evidence/beyond-1000-probe.json.

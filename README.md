@@ -1,5 +1,7 @@
 # Suma de tres cubos: buscador exacto y fundamento formal
 
+[![Validation](https://github.com/Iro007/suma-cubos/actions/workflows/validation.yml/badge.svg)](https://github.com/Iro007/suma-cubos/actions/workflows/validation.yml)
+
 Este repositorio publica un buscador reproducible para
 `x^3 + y^3 + z^3 = K`, sus pruebas de regresion, 35 registros de campanas
 completadas y la formalizacion en Lean 4 de su base algebraica.
@@ -14,10 +16,12 @@ limitados a regiones finitas; no prueban inexistencia global.
   independiente, raices singulares, enteros grandes y reanudacion.
 - Evidencia: 35 pares campana-K completados y auditados con el SHA-256
   del motor. Todos reportan cero ternas dentro de sus regiones.
-- Lean: el proyecto `formal/` verifica identidades, condiciones necesarias,
-  reconstruccion y la cota de divisores. La comprobacion del kernel se
-  ejecuta en el job `lean` de [GitHub Actions](https://github.com/Iro007/suma-cubos/actions).
-  La primera ejecucion de CI determina el estado de compilacion.
+- Lean: 12 teoremas compilados y comprobados con exito: siete lemas del
+  metodo y cinco certificados de ternas conocidas. El kernel verifica las
+  identidades, condiciones necesarias, reconstruccion y la cota de divisores.
+  [Ejecucion satisfactoria de CI](https://github.com/Iro007/suma-cubos/actions/runs/38106620320).
+  La evidencia, versiones y huella del archivo formal estan en
+  [evidence/formal-verification.json](evidence/formal-verification.json).
 
 La prueba formal no certifica todo el programa Python, los archivos JSON,
 la ausencia global de soluciones ni un descubrimiento mundial.

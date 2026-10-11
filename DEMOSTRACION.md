@@ -95,3 +95,18 @@ El job `lean` de GitHub Actions ejecuta la compilacion. Solo su finalizacion
 satisfactoria permite afirmar que el archivo formal fue comprobado.
 `#print axioms` muestra las dependencias logicas de los teoremas principales.
 El archivo no contiene `sorry`, `admit`, `native_decide` ni axiomas propios.
+
+
+## Comprobacion confirmada
+
+Los 12 teoremas (siete lemas y cinco controles conocidos) compilaron
+correctamente en Lean 4.19.0, con Mathlib fijado al commit indicado en
+el manifiesto. Los jobs Python y Lean finalizaron satisfactoriamente.
+
+Evidencia: https://github.com/Iro007/suma-cubos/actions/runs/38106620320
+Registro de versiones, archivo y axiomas observados:
+[evidence/formal-verification.json](evidence/formal-verification.json).
+
+El informe de la cota y de la reconstruccion muestra propext,
+Classical.choice y Quot.sound; el control K=579 muestra propext y
+Quot.sound. Ninguno de esos tres informes contiene sorryAx.

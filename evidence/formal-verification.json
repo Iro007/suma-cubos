@@ -1,0 +1,39 @@
+{
+  "status": "verified",
+  "workflow_url": "https://github.com/Iro007/suma-cubos/actions/runs/38106620320",
+  "verified_commit": "89c5483e0d367397ca9200725a0d48f8e861de06",
+  "lean_toolchain": "leanprover/lean4:v4.19.0",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "proof_file_sha256": "91e2706a45d91c9b8d10f87325f67836a828728e54495e6376fa9be57be3f0a1",
+  "theorems": [
+    "cube_sum_factorization",
+    "signed_discriminant",
+    "divisor_necessary",
+    "reconstruction_sound",
+    "unsigned_discriminant",
+    "divisor_cube_bound",
+    "zero_sum_branch",
+    "control_k3",
+    "control_k75",
+    "control_k165",
+    "control_k579",
+    "control_k906"
+  ],
+  "observed_axioms": {
+    "divisor_cube_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "reconstruction_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "control_k579": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "algebraic method and known controls; no formal proof of all Python functions or global nonexistence"
+}
