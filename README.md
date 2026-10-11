@@ -112,3 +112,38 @@ atribuye a las campanas publicadas en este repositorio.
 El backend C++ y otros experimentos anteriores no forman parte de la
 publicacion validada. [REPRODUCIBILITY.md](REPRODUCIBILITY.md) explica la
 cobertura y los checkpoints.
+
+## Nueva linea: representaciones pequenas de 114
+
+Se estudian dos preguntas con restricciones precisas:
+
+**Tres fracciones estrictamente positivas.** El menor denominador comun
+es 6. La terna es (13/6,7/3,9/2), con numeradores comunes (13,14,27).
+Se excluyeron completamente los denominadores 1,2,3,4,5. La prueba Lean
+de esta minimalidad esta en `formal/SumaCubos/NumberDomains.lean`.
+Su estado de verificacion se registra en la evidencia de CI.
+El resultado no afirma minimalidad si se admiten fracciones negativas:
+la positividad es esencial para la cota finita de numeradores.
+
+**Enteros gaussianos.** Se define la altura como el maximo valor absoluto
+de las seis componentes enteras. La altura minima computacional es 23:
+(-23-10i)^3+(-23+10i)^3+22^3=114. No hay soluciones con altura <=22;
+a altura <=23 hay una sola terna salvo permutaciones. Dos recorridos
+exactos independientes coinciden. El recorrido principal reviso
+2051325 pares para altura 22 y 2440945 pares para altura 23.
+
+La igualdad del testigo y su altura tienen certificados Lean. La ausencia
+de ternas gaussianas menores esta verificada por computacion exhaustiva,
+no por una formalizacion de esa enumeracion en Lean. La altura usada
+no es el modulo complejo sqrt(a^2+b^2). No se afirma novedad mundial.
+
+Datos: [evidence/number-domains-k114.json](evidence/number-domains-k114.json).
+Comandos reproducibles:
+
+```powershell
+.\.venv\Scripts\python.exe number_domains.py
+.\.venv\Scripts\python.exe -m unittest discover -v
+```
+
+La primera orden repite tanto la busqueda como el contraste independiente.
+Hay 16 tests: los 11 del buscador original y cinco sobre dominios numericos.

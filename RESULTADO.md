@@ -115,3 +115,21 @@ por permutacion para cinco K, todos ya representados en la tabla historica
 de Mishima. Para 1011 y 1020 no hubo resultados en ese rango. No se ha
 establecido un nuevo caso mundial ni el estado global actual de esos dos K.
 Los datos estan en evidence/beyond-1000-probe.json.
+
+
+## Estudio de otros dominios numericos
+
+Para K=114, el menor denominador comun de tres fracciones estrictamente
+positivas es 6: (13/6,7/3,9/2). Los seis denominadores y sus ternas completas
+se registran en evidence/number-domains-k114.json. Se preparo una prueba
+Lean de la exclusion de denominadores menores y de la existencia con q=6.
+
+En Z[i], usando la altura maxima de componentes enteras, se verifico
+computacionalmente que el minimo es 23. Hay una sola terna a esa altura
+salvo permutaciones: (-23-10i,-23+10i,22). No hay ternas a altura <=22.
+El resultado coincide con un recorrido independiente. La identidad del
+testigo se expresa en Lean; la minimalidad gaussiana sigue siendo una
+verificacion computacional, no una prueba Lean de ausencia.
+
+Los 16 tests locales pasaron. Estas observaciones no resuelven el problema
+original sobre Z ni se presentan como resultados nuevos en la literatura.

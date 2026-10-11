@@ -110,3 +110,44 @@ Registro de versiones, archivo y axiomas observados:
 El informe de la cota y de la reconstruccion muestra propext,
 Classical.choice y Quot.sound; el control K=579 muestra propext y
 Quot.sound. Ninguno de esos tres informes contiene sorryAx.
+
+
+## Denominador minimo con tres fracciones positivas para K=114
+
+Escribimos x=a/q, y=b/q, z=c/q, con q,a,b,c naturales positivos.
+La ecuacion equivale a a^3+b^3+c^3=114*q^3. La equivalencia por eliminacion
+del denominador tambien se expresa en Lean.
+
+Para q<=5, la positividad implica a^3,b^3,c^3<=114*5^3=14250.
+Como 25^3=15625>14250, cada numerador pertenece a {1,...,24}.
+Se comprueba exhaustivamente que ningun q en {1,...,5} y ninguna terna
+de esos numeradores satisface la ecuacion. La enumeracion finita se
+comprueba por reduccion del kernel de Lean, sin recurrir a native_decide.
+
+Para q=6, 13^3+14^3+27^3=24624=114*6^3. Las fracciones reducidas son
+13/6,7/3,9/2, todas positivas. Existencia y exclusion de q<6 demuestran
+la minimalidad. No se permite cancelar cubos positivos con negativos;
+el teorema no cubre el problema de minimo denominador con signos libres.
+
+## Altura minima computacional en enteros gaussianos
+
+Para cada H se generan todos los (a,b) en [-H,H]^2. Su cubo es
+(a^3-3ab^2,3a^2b-b^3). Se indexan los cubos por ambas componentes.
+Para cada par de valores se busca el cubo complementario de 114+0i.
+Se incluyen repeticiones y se ordenan indices para quitar solo permutaciones.
+Si un cubo tiene mas de una preimagen, se conservan todas: no se presupone
+inyectividad de la funcion cubo.
+
+Para H=22 hay 2025 valores y 2051325 pares no ordenados con repeticion.
+No hubo ternas. Todo dominio de altura menor esta contenido en ese cuadrado.
+Para H=23 hay 2209 valores y 2440945 pares. Se hallo una unica terna salvo
+permutaciones: (-23-10i,-23+10i,22).
+
+Un segundo algoritmo usa pares ordenados, indice del tercer cubo solamente
+por parte real y cubos calculados mediante multiplicaciones de pares.
+Ambos resultados coinciden exactamente. Se verifica tambien el algoritmo
+contra enumeracion directa de triples en cuadrados pequenos.
+
+Esto demuestra minimalidad con el respaldo de una computacion exhaustiva
+exacta. Lean certifica la igualdad del testigo y su altura 23, pero no la
+completitud ni el resultado negativo de la enumeracion gaussiana.

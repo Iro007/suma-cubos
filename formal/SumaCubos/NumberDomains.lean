@@ -13,9 +13,9 @@ theorem numerator_bound (a : ℕ) (h : a^3 ≤ 14250) : a ≤ 24 := by
   norm_num at hpow
   omega
 
-/-- A finite, kernel-evaluated check over all numerator and denominator values. -/
 set_option maxRecDepth 100000 in
 set_option maxHeartbeats 0 in
+/-- A finite, kernel-evaluated check over all numerator and denominator values. -/
 theorem small_denominator_check :
     ∀ (q : Fin 6) (a b c : Fin 25),
       (0 < q.val ∧ 0 < a.val ∧ 0 < b.val ∧ 0 < c.val) →
@@ -62,7 +62,6 @@ theorem rational_numerators_equiv (a b c q : ℕ) (hq : q ≠ 0) :
   have hfrac : ((a : ℚ)/q)^3+((b : ℚ)/q)^3+((c : ℚ)/q)^3 =
       ((a : ℚ)^3+(b : ℚ)^3+(c : ℚ)^3)/(q : ℚ)^3 := by
     field_simp [hqcast]
-    <;> ring
   rw [hfrac, div_eq_iff (pow_ne_zero 3 hqcast)]
   norm_cast
 
