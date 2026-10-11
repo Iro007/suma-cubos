@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "config": {
+    "K": 627,
+    "B": 100000000000000400000,
+    "z_min": 100000000000000100001,
+    "d_min": 1,
+    "d_max": 10000,
+    "engine": "exact-divisor-v2",
+    "engine_sha256": "a7fdd2e2634fc644485eddfd1343ffbfa3098dfb4da00d50be400ae6258ec173"
+  },
+  "last_d": 10000,
+  "solutions": [],
+  "elapsed_seconds": 16.208305000007385,
+  "complete": true
+}

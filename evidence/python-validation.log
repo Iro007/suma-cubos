@@ -1,0 +1,16 @@
+test_checkpoint_resume_and_mismatch (test_search.SearchTests.test_checkpoint_resume_and_mismatch) ... ok
+test_constructed_solutions_with_large_signed_integers (test_search.SearchTests.test_constructed_solutions_with_large_signed_integers) ... ok
+test_deep_three_primary_subgroups (test_search.SearchTests.test_deep_three_primary_subgroups) ... ok
+test_full_small_boxes (test_search.SearchTests.test_full_small_boxes) ... ok
+test_integer_bounds (test_search.SearchTests.test_integer_bounds) ... ok
+test_large_exact_candidates (test_search.SearchTests.test_large_exact_candidates) ... ok
+test_modular_roots_against_enumeration (test_search.SearchTests.test_modular_roots_against_enumeration) ... ok
+test_singular_roots (test_search.SearchTests.test_singular_roots) ... ok
+test_split_intervals_and_large_band (test_search.SearchTests.test_split_intervals_and_large_band) ... ok
+test_windows_checkpoint_retry (test_search.SearchTests.test_windows_checkpoint_retry) ... ok
+test_zero_discriminant (test_search.SearchTests.test_zero_discriminant) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.626s
+
+OK

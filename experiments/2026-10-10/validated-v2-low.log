@@ -1,0 +1,16 @@
+K=114: |z|=[0,1000000], d=[1,1587401], resume_d=1
+ERROR: [WinError 5] Acceso denegado: 'C:\\Users\\Yoyobastidas\\Desktop\\ig2\\01_Proyectos\\Suma_cubos\\experiments\\validated-v2-low-2026-10-10\\k114.json.tmp' -> 'C:\\Users\\Yoyobastidas\\Desktop\\ig2\\01_Proyectos\\Suma_cubos\\experiments\\validated-v2-low-2026-10-10\\k114.json'
+K=114: |z|=[0,1000000], d=[1,1587401], resume_d=1568769
+K=114: COMPLETE; d=1..1587401; seconds=65.56; solutions=0
+K=390: |z|=[0,1000000], d=[1,1587401], resume_d=1
+K=390: COMPLETE; d=1..1587401; seconds=41.19; solutions=0
+K=627: |z|=[0,1000000], d=[1,1587401], resume_d=1
+K=627: COMPLETE; d=1..1587401; seconds=53.66; solutions=0
+K=633: |z|=[0,1000000], d=[1,1587401], resume_d=1
+K=633: COMPLETE; d=1..1587401; seconds=47.46; solutions=0
+K=732: |z|=[0,1000000], d=[1,1587401], resume_d=1
+K=732: COMPLETE; d=1..1587401; seconds=39.32; solutions=0
+K=921: |z|=[0,1000000], d=[1,1587401], resume_d=1
+K=921: COMPLETE; d=1..1587401; seconds=39.30; solutions=0
+K=975: |z|=[0,1000000], d=[1,1587401], resume_d=1
+K=975: COMPLETE; d=1..1587401; seconds=39.59; solutions=0

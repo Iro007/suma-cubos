@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.pyc
+.lake/
+*.exe
+*.obj
+nul
+# Historical experiments and documents outside the validated publication
+paper_k114.*
+generate_pdf.py
+Solution_K*.lean
+solutions.txt
+checkpoint_K*.txt
+booker_sieve.cpp
+build_cpp.bat
+booker_sutherland*.py
+bs_complete.py
+busqueda_paralela.py
+lll_*.py
+mordell_filter.py
+norma_cubica.py
+suma_cubos_hermes_jev.py
+suma_cubos_unified.py
+experiments/2026-10-10/
+experiments/validated-low-2026-10-10/
+experiments/exact-search/
+formal/lake-manifest.json
