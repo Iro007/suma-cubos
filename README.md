@@ -81,6 +81,13 @@ hoy. Tampoco generar un K a partir de una terna constituye por si solo un
 nuevo resultado cientifico. No se ha verificado aqui una lista actual de
 objetivos abiertos mayores de 1000.
 
+Se ejecutaron ademas siete pruebas locales para K=1002,1005,1011,1014,
+1020,1023,1029 con abs(z)<=10000 y el rango completo de d. El archivo
+[evidence/beyond-1000-probe.json](evidence/beyond-1000-probe.json) registra
+las ternas verificadas y declara que su novedad bibliografica no fue
+establecida. Por ejemplo, 1002=1^3+1^3+10^3 es una representacion sencilla;
+no se presenta como descubrimiento. Las ternas se agrupan por permutacion.
+
 Para un posible hallazgo se requiere: verificar la suma entera, contrastar
 las bases y publicaciones y distinguir primera representacion conocida,
 nueva representacion y mejora de cota. Ninguna de esas novedades se

@@ -1,0 +1,129 @@
+{
+  "engine_sha256": "a7fdd2e2634fc644485eddfd1343ffbfa3098dfb4da00d50be400ae6258ec173",
+  "scope": "finite local probes, not a list of globally open cases",
+  "records": [
+    {
+      "K": 1002,
+      "B": 10000,
+      "d_min": 1,
+      "d_max": 15874,
+      "complete": true,
+      "triples_up_to_permutation": [
+        [
+          -341,
+          -272,
+          391
+        ],
+        [
+          1,
+          1,
+          10
+        ]
+      ],
+      "novelty": "not assessed; no claim of a first published representation"
+    },
+    {
+      "K": 1005,
+      "B": 10000,
+      "d_min": 1,
+      "d_max": 15874,
+      "complete": true,
+      "triples_up_to_permutation": [
+        [
+          -319,
+          -193,
+          341
+        ]
+      ],
+      "novelty": "not assessed; no claim of a first published representation"
+    },
+    {
+      "K": 1011,
+      "B": 10000,
+      "d_min": 1,
+      "d_max": 15874,
+      "complete": true,
+      "triples_up_to_permutation": [],
+      "novelty": "not assessed; no claim of a first published representation"
+    },
+    {
+      "K": 1014,
+      "B": 10000,
+      "d_min": 1,
+      "d_max": 15874,
+      "complete": true,
+      "triples_up_to_permutation": [
+        [
+          -4225,
+          3272,
+          3431
+        ],
+        [
+          -1675,
+          1040,
+          1529
+        ]
+      ],
+      "novelty": "not assessed; no claim of a first published representation"
+    },
+    {
+      "K": 1020,
+      "B": 10000,
+      "d_min": 1,
+      "d_max": 15874,
+      "complete": true,
+      "triples_up_to_permutation": [],
+      "novelty": "not assessed; no claim of a first published representation"
+    },
+    {
+      "K": 1023,
+      "B": 10000,
+      "d_min": 1,
+      "d_max": 15874,
+      "complete": true,
+      "triples_up_to_permutation": [
+        [
+          -12280,
+          1535,
+          12272
+        ],
+        [
+          -526,
+          -94,
+          527
+        ],
+        [
+          -1,
+          8,
+          8
+        ]
+      ],
+      "novelty": "not assessed; no claim of a first published representation"
+    },
+    {
+      "K": 1029,
+      "B": 10000,
+      "d_min": 1,
+      "d_max": 15874,
+      "complete": true,
+      "triples_up_to_permutation": [
+        [
+          -140,
+          -104,
+          157
+        ],
+        [
+          -35,
+          28,
+          28
+        ],
+        [
+          7,
+          7,
+          7
+        ]
+      ],
+      "novelty": "not assessed; no claim of a first published representation"
+    }
+  ]
+}
