@@ -76,8 +76,19 @@ theorem divisor_cube_bound (x y z k d B : ℤ)
     have hp := mul_neg_of_pos_of_neg hdpos hn
     nlinarith [sq_nonneg (3*d*(x-y))]
   have hzpow : |z|^3 ≤ B^3 := pow_le_pow_left₀ (abs_nonneg z) hz 3
+  have hzabs : |z^3| = |z|^3 := by
+    rcases le_total 0 z with hp | hn
+    · rw [abs_of_nonneg (pow_nonneg hp 3), abs_of_nonneg hp]
+    · have hcube : z^3 ≤ 0 := by
+        have hmul := mul_nonpos_of_nonpos_of_nonneg hn (sq_nonneg z)
+        nlinarith [hmul]
+      rw [abs_of_nonpos hcube, abs_of_nonpos hn]
+      ring
   have htriangle : |k-z^3| ≤ |k|+|z|^3 := by
-    simpa only [sub_zero, zero_sub, abs_neg, abs_pow] using (abs_sub_le k 0 (z^3))
+    have ht : |k-z^3| ≤ |k|+|z^3| := by
+      simpa only [sub_zero, zero_sub, abs_neg] using (abs_sub_le k 0 (z^3))
+    rw [hzabs] at ht
+    exact ht
   linarith
 
 /-- The excluded S=0 branch is possible only for a cube target. -/
