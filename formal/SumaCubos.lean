@@ -45,7 +45,7 @@ theorem unsigned_discriminant (x y z k d : ℤ)
     calc
       |k-z^3| = |x^3+y^3| := by congr 1; linarith [h]
       _ = |(x+y)*(x^2-x*y+y^2)| := by rw [cube_sum_factorization]
-      _ = |x+y|*(x^2-x*y+y^2) := by rw [abs_mul, abs_of_nonneg hq]
+      _ = |x+y| * (x^2-x*y+y^2) := by rw [abs_mul, abs_of_nonneg hq]
       _ = d*(x^2-x*y+y^2) := by rw [← hd]
   have hd2 : d^2=(x+y)^2 := by
     rcases le_total 0 (x+y) with hp | hn
@@ -77,7 +77,7 @@ theorem divisor_cube_bound (x y z k d B : ℤ)
     nlinarith [sq_nonneg (3*d*(x-y))]
   have hzpow : |z|^3 ≤ B^3 := pow_le_pow_left₀ (abs_nonneg z) hz 3
   have htriangle : |k-z^3| ≤ |k|+|z|^3 := by
-    simpa only [abs_pow] using (abs_sub_le k (z^3))
+    simpa only [sub_zero, zero_sub, abs_neg, abs_pow] using (abs_sub_le k 0 (z^3))
   linarith
 
 /-- The excluded S=0 branch is possible only for a cube target. -/

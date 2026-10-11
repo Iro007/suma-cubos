@@ -20,7 +20,14 @@
           10
         ]
       ],
-      "novelty": "not assessed; no claim of a first published representation"
+      "novelty": "target already represented in the historical table; no new-target discovery",
+      "historical_reference_url": "https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm",
+      "target_previously_represented": true,
+      "historical_reference_triple": [
+        1,
+        1,
+        10
+      ]
     },
     {
       "K": 1005,
@@ -35,7 +42,14 @@
           341
         ]
       ],
-      "novelty": "not assessed; no claim of a first published representation"
+      "novelty": "target already represented in the historical table; no new-target discovery",
+      "historical_reference_url": "https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm",
+      "target_previously_represented": true,
+      "historical_reference_triple": [
+        -193,
+        -319,
+        341
+      ]
     },
     {
       "K": 1011,
@@ -44,7 +58,9 @@
       "d_max": 15874,
       "complete": true,
       "triples_up_to_permutation": [],
-      "novelty": "not assessed; no claim of a first published representation"
+      "novelty": "empty historical entry and local bounded search are not proof of worldwide open status",
+      "historical_reference_url": "https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm",
+      "target_previously_represented": "not established by this historical table"
     },
     {
       "K": 1014,
@@ -64,7 +80,14 @@
           1529
         ]
       ],
-      "novelty": "not assessed; no claim of a first published representation"
+      "novelty": "target already represented in the historical table; no new-target discovery",
+      "historical_reference_url": "https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm",
+      "target_previously_represented": true,
+      "historical_reference_triple": [
+        1040,
+        1529,
+        -1675
+      ]
     },
     {
       "K": 1020,
@@ -73,7 +96,9 @@
       "d_max": 15874,
       "complete": true,
       "triples_up_to_permutation": [],
-      "novelty": "not assessed; no claim of a first published representation"
+      "novelty": "empty historical entry and local bounded search are not proof of worldwide open status",
+      "historical_reference_url": "https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm",
+      "target_previously_represented": "not established by this historical table"
     },
     {
       "K": 1023,
@@ -98,7 +123,14 @@
           8
         ]
       ],
-      "novelty": "not assessed; no claim of a first published representation"
+      "novelty": "target already represented in the historical table; no new-target discovery",
+      "historical_reference_url": "https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm",
+      "target_previously_represented": true,
+      "historical_reference_triple": [
+        -1,
+        8,
+        8
+      ]
     },
     {
       "K": 1029,
@@ -123,7 +155,14 @@
           7
         ]
       ],
-      "novelty": "not assessed; no claim of a first published representation"
+      "novelty": "target already represented in the historical table; no new-target discovery",
+      "historical_reference_url": "https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm",
+      "target_previously_represented": true,
+      "historical_reference_triple": [
+        -104,
+        -140,
+        157
+      ]
     }
   ]
 }

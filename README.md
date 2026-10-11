@@ -84,8 +84,10 @@ objetivos abiertos mayores de 1000.
 Se ejecutaron ademas siete pruebas locales para K=1002,1005,1011,1014,
 1020,1023,1029 con abs(z)<=10000 y el rango completo de d. El archivo
 [evidence/beyond-1000-probe.json](evidence/beyond-1000-probe.json) registra
-las ternas verificadas y declara que su novedad bibliografica no fue
-establecida. Por ejemplo, 1002=1^3+1^3+10^3 es una representacion sencilla;
+las ternas verificadas. Los cinco K con resultados locales ya tienen una
+representacion en la [tabla historica de Mishima](https://www.asahi-net.or.jp/~KC2H-MSM/mathland/math04/matb0111.htm); las cinco ternas de referencia
+se comprobaron exactamente. Las entradas vacias para 1011 y 1020
+no confirman que sigan abiertos mundialmente. Por ejemplo, 1002=1^3+1^3+10^3 es una representacion sencilla;
 no se presenta como descubrimiento. Las ternas se agrupan por permutacion.
 
 Para un posible hallazgo se requiere: verificar la suma entera, contrastar
